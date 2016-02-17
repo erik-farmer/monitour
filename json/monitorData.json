@@ -1,0 +1,59 @@
+//{
+//      "adaptiveSync": null,
+//      "brand": null,
+//      "inputs": null,
+//      "model": null,
+//      "panel": null,
+//      "price": null,
+//      "refereshRate": null,
+//      "resolution": null,
+//      "responseTime": null,
+//      "size": null
+//}
+{
+  "monitors": [
+    {
+      "adaptiveSync": "G-Sync",
+      "brand": "Dell",
+      "inputs": [
+        "HDMI 1.4",
+        "DisplayPort 1.2"
+      ],
+      "model": "S2716DG",
+      "panel": "TN",
+      "price": 599,
+      "refereshRate": 144,
+      "resolution": "2560 x 1440",
+      "responseTime": 1,
+      "size": 27
+    },
+    {
+      "adaptiveSync": "G-Sync",
+      "brand": "Asus",
+      "inputs": [
+        "DisplayPort 1.2"
+      ],
+      "model": "ROG SWIFT PG278Q",
+      "panel": "TN",
+      "price": 674,
+      "refereshRate": 144,
+      "resolution": "2560 x 1440",
+      "responseTime": 1,
+      "size": 27
+    },
+    {
+      "adaptiveSync": "G-Sync",
+      "brand": "Acer",
+      "inputs": [
+        "DisplayPort 1.2"
+      ],
+      "model": "XB270HU",
+      "panel": "IPS",
+      "price": 719,
+      "refereshRate": 144,
+      "resolution": "2560 x 1440",
+      "responseTime": 4,
+      "size": 27
+    }
+  ]
+}
