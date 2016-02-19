@@ -1,22 +1,22 @@
 (function () {
 
-    angular
-        .module('app.core')
-        .config(configFunction);
+    var core = angular.module('app.core');
+
+    core.config(configFunction);
 
     configFunction.$inject = ['$locationProvider', '$stateProvider', '$urlRouterProvider'];
 
     function configFunction($locationProvider, $stateProvider, $urlRouterProvider) {
+
+        $locationProvider.html5Mode(true);
 
         $urlRouterProvider.otherwise('/');
 
         $stateProvider
             .state('home', {
                 url: '/',
-                templateUrl: 'listView/list.html',
-                controller: 'ListController',
-                controllerAs: 'vm'
-        });
+                template: '<list-view></list-view>',
+            });
     }
 
 })();
