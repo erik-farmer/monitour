@@ -2,7 +2,8 @@
     'use strict';
 
     angular.module('app.core', [
-        // 'ngRoute',
-        'app.list'
+        'ui.router',
+        'app.list',
     ]);
+
 })();
