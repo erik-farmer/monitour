@@ -2,6 +2,7 @@
     'use strict';
 
     angular.module('app.core', [
-        'ngRoute',
-    ])
+        // 'ngRoute',
+        'app.list'
+    ]);
 })();
