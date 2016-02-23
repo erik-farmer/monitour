@@ -22,11 +22,34 @@
         return directive;
     }
 
-    ControllerFunction.$inject = [];
+    ControllerFunction.$inject = ['listService'];
 
-    function ControllerFunction() {
+    function ControllerFunction(listService) {
+
         var vm = this;
-        this.site = "LIST";
+        vm.site = "LIST";
+        vm.brands = {
+            "Dell": true,
+            "Asus": true,
+            "Acer": true,
+        };
+        listService.getMonitors().then(function(data) {
+            if (data.status == 200) {
+                vm.monitors = data.data.monitors;
+            }
+        });
+
+        vm.brandFilter = brandFilter;
+
+        function brandFilter(monitor) {
+            var brand = monitor.brand;
+            if (vm.brands[brand] === true) {
+                return monitor;
+            } else {
+                return false;
+            }
+        }
+
     }
 
 })();

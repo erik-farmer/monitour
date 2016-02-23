@@ -1,3 +1,21 @@
-<div>
-  {{vm.site}}
+<div class="container">
+  <h1>{{vm.site}}:</h1>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" ng-model="vm.brands.Dell"> Dell
+    </label>
+    <label>
+      <input type="checkbox" ng-model="vm.brands.Asus"> Asus
+    </label>
+    <label>
+      <input type="checkbox" ng-model="vm.brands.Acer"> Acer
+    </label>
+  </div>
+  <div ng-repeat="m in vm.monitors | filter:vm.brandFilter">
+    {{m.brand}}: {{m.model}} <br>
+    {{m.size}}inch {{m.panel}} panel<br>
+    {{m.resolution}}@{{m.resfreshRate}}Hz
+    <hr>
+  </div>
+  <pre>{{vm.brands|json}}</pre>
 </div>
