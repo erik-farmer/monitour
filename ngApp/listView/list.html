@@ -53,12 +53,17 @@
     </div>
   </div>
 
-  <div ng-repeat="m in vm.monitors | filter:vm.filterByProperties">
-    {{m.brand}}: {{m.model}} <br>
-    {{m.size}} inch {{m.panel}} panel<br>
-    {{m.resolution}}@{{m.refreshRate}}<br>
-    {{m.responseTime}}ms {{m.adaptiveSync}}
-    <hr>
+  <div class="row" >
+      <div class="col-md-4" ng-repeat="m in vm.monitors | filter:vm.filterByProperties">
+        {{$index}} {{m.brand}}: {{m.model}} <br>
+        {{m.size}} inch {{m.panel}} panel<br>
+        {{m.resolution}}@{{m.refreshRate}}<br>
+        {{m.responseTime}}ms {{m.adaptiveSync}}
+        <hr>
+      </div>
+      <div class="clearfix" ng-if="$index%3==2"></div>
   </div>
+
   <pre>{{vm.filter|json}}</pre>
+
 </div>
