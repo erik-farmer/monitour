@@ -28,26 +28,34 @@
 
         var vm = this;
         vm.site = "LIST";
-        vm.brands = {
-            "Dell": true,
-            "Asus": true,
-            "Acer": true,
-        };
+        vm.filter = {};
+        vm.filterByProperties = filterByProperties;
+
         listService.getMonitors().then(function(data) {
             if (data.status == 200) {
                 vm.monitors = data.data.monitors;
             }
         });
 
-        vm.brandFilter = brandFilter;
-
-        function brandFilter(monitor) {
-            var brand = monitor.brand;
-            if (vm.brands[brand] === true) {
-                return monitor;
-            } else {
-                return false;
+        function filterByProperties(monitor) {
+            var matches = true;
+            for (var prop in vm.filter) {
+                // brand, panel, refresh rate, etc.
+                if (noSubFilter(vm.filter[prop])) continue;
+                if (!vm.filter[prop][monitor[prop]]) {
+                    matches = false;
+                    break;
+                }
             }
+            return matches;
+        }
+
+        function noSubFilter(subFilterObj) {
+            for (var key in subFilterObj) {
+                // The item's actual property
+                if (subFilterObj[key]) return false;
+            }
+            return true;
         }
 
     }

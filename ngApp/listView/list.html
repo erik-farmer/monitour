@@ -1,21 +1,64 @@
 <div class="container">
   <h1>{{vm.site}}:</h1>
-  <div class="checkbox">
-    <label>
-      <input type="checkbox" ng-model="vm.brands.Dell"> Dell
-    </label>
-    <label>
-      <input type="checkbox" ng-model="vm.brands.Asus"> Asus
-    </label>
-    <label>
-      <input type="checkbox" ng-model="vm.brands.Acer"> Acer
-    </label>
+  <div class="row">
+    <div class="col-md-3">
+      <h3>Brand</h3>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" ng-model="vm.filter.brand.BenQ"> BenQ
+        </label>
+        <label>
+          <input type="checkbox" ng-model="vm.filter.brand.Asus"> Asus
+        </label>
+        <label>
+          <input type="checkbox" ng-model="vm.filter.brand.Acer"> Acer
+        </label>
+        <label>
+          <input type="checkbox" ng-model="vm.filter.brand.Dell"> Dell
+        </label>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <h3>Panel</h3>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" ng-model="vm.filter.panel.IPS"> IPS
+        </label>
+        <label>
+          <input type="checkbox" ng-model="vm.filter.panel.TN"> TN
+        </label>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <h3>Refresh Rate</h3>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" ng-model="vm.filter.refreshRateFilter._144"> 144
+        </label>
+        <label>
+          <input type="checkbox" ng-model="vm.filter.refreshRateFilter._60"> 60
+        </label>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <h3>Adaptive Sync</h3>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" ng-model="vm.filter.adaptiveSync.G_Sync"> G-Sync
+        </label>
+        <label>
+          <input type="checkbox" ng-model="vm.filter.adaptiveSync.FreeSync"> FreeSync
+        </label>
+      </div>
+    </div>
   </div>
-  <div ng-repeat="m in vm.monitors | filter:vm.brandFilter">
+
+  <div ng-repeat="m in vm.monitors | filter:vm.filterByProperties">
     {{m.brand}}: {{m.model}} <br>
-    {{m.size}}inch {{m.panel}} panel<br>
-    {{m.resolution}}@{{m.resfreshRate}}Hz
+    {{m.size}} inch {{m.panel}} panel<br>
+    {{m.resolution}}@{{m.refreshRate}}<br>
+    {{m.responseTime}}ms {{m.adaptiveSync}}
     <hr>
   </div>
-  <pre>{{vm.brands|json}}</pre>
+  <pre>{{vm.filter|json}}</pre>
 </div>
