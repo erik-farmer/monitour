@@ -1,0 +1,25 @@
+{
+  "gpus": {
+    "pick1080-60" :{
+      "card": "XYZ",
+      "benchmarks": [],
+      "comparables": [],
+      "img": "",
+      "link": ""
+    },
+    "pick1080-80" :{
+      "card": "XYZ",
+      "benchmarks": [],
+      "comparables": [],
+      "img": "",
+      "link": ""
+    },
+    "pick1440-60" :{
+      "card": "XYZ",
+      "benchmarks": [],
+      "comparables": [],
+      "img": "",
+      "link": ""
+    }
+  }
+}
