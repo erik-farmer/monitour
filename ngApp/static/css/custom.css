@@ -87,3 +87,7 @@
 .filter_row {
   margin-bottom: 30px;
 }
+
+.navbar {
+  border-radius: 0;
+}
