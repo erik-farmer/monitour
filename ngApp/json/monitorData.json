@@ -1,44 +1,208 @@
 {
   "monitors": [
     {
+      "adaptiveSyncFilter": "G_Sync",
       "adaptiveSync": "G-Sync",
       "brand": "Dell",
       "inputs": [
         "HDMI 1.4",
         "DisplayPort 1.2"
       ],
+      "link": "http://amzn.to/1QCyHqJ",
       "model": "S2716DG",
       "panel": "TN",
-      "price": 599,
-      "refereshRate": 144,
+      "refreshRateFilter": "_144",
+      "refreshRate": 144,
       "resolution": "2560 x 1440",
       "responseTime": 1,
       "size": 27
     },
     {
+      "adaptiveSyncFilter": "G_Sync",
       "adaptiveSync": "G-Sync",
       "brand": "Asus",
       "inputs": [
         "DisplayPort 1.2"
       ],
+      "link": "http://amzn.to/1LaGT1j",
       "model": "ROG SWIFT PG278Q",
       "panel": "TN",
-      "price": 674,
-      "refereshRate": 144,
+      "refreshRateFilter": "_144",
+      "refreshRate": 144,
       "resolution": "2560 x 1440",
       "responseTime": 1,
       "size": 27
     },
     {
+      "adaptiveSyncFilter": "G_Sync",
       "adaptiveSync": "G-Sync",
       "brand": "Acer",
       "inputs": [
         "DisplayPort 1.2"
       ],
+      "link": "http://amzn.to/1puAi80",
       "model": "XB270HU",
+      "panel": "TN",
+      "refreshRateFilter": "_144",
+      "refreshRate": 144,
+      "resolution": "2560 x 1440",
+      "responseTime": 1,
+      "size": 27
+    },
+    {
+      "adaptiveSyncFilter": null,
+      "adaptiveSync": "N/A",
+      "brand": "Asus",
+      "inputs": [
+        "D-Sub",
+        "DVI",
+        "HDMI"
+      ],
+      "link": "http://amzn.to/1QCzPdV",
+      "model": "VS239H-P",
       "panel": "IPS",
-      "price": 719,
-      "refereshRate": 144,
+      "refreshRateFilter": "_60",
+      "refreshRate": 60,
+      "resolution": "1920 x 1080",
+      "responseTime": 5,
+      "size": 23
+    },
+    {
+      "adaptiveSyncFilter": null,
+      "adaptiveSync": "N/A",
+      "brand": "Acer",
+      "inputs": [
+        "D-Sub",
+        "DVI"
+      ],
+      "link": "http://amzn.to/1QCB2SG",
+      "model": "G276HL",
+      "panel": "TN",
+      "refreshRateFilter": "_60",
+      "refreshRate": 60,
+      "resolution": "1920 x 1080",
+      "responseTime": 6,
+      "size": 27
+    },
+    {
+      "adaptiveSyncFilter": null,
+      "adaptiveSync": "N/A",
+      "brand": "Asus",
+      "inputs": [
+        "D-Sub",
+        "DVI",
+        "DisplayPort",
+        "HDMI"
+      ],
+      "link": "http://amzn.to/1RxetLz",
+      "model": "VG248QE",
+      "panel": "TN",
+      "refreshRateFilter": "_144",
+      "refreshRate": 144,
+      "resolution": "1920 x 1080",
+      "responseTime": 1,
+      "size": 24
+    },
+    {
+      "adaptiveSyncFilter": null,
+      "adaptiveSync": "N/A",
+      "brand": "BenQ",
+      "inputs": [
+        "D-Sub",
+        "DVI",
+        "HDMI"
+      ],
+      "link": "http://amzn.to/1QCC5ln",
+      "model": "XL2411Z",
+      "panel": "TN",
+      "refreshRateFilter": "_144",
+      "refreshRate": 144,
+      "resolution": "1920 x 1080",
+      "responseTime": 1,
+      "size": 24
+    },
+    {
+      "adaptiveSyncFilter": null,
+      "adaptiveSync": "N/A",
+      "brand": "Acer",
+      "inputs": [
+        "D-Sub",
+        "DVI",
+        "HDMI"
+      ],
+      "link": "http://amzn.to/1QCCcgU",
+      "model": "G257HU",
+      "panel": "IPS",
+      "refreshRateFilter": "_60",
+      "refreshRate": 60,
+      "resolution": "2560 x 1440",
+      "responseTime": 4,
+      "size": 25
+    },
+    {
+      "adaptiveSyncFilter": "G_Sync",
+      "adaptiveSync": "G-Sync",
+      "brand": "Acer",
+      "inputs": [
+        "DisplayPort"
+      ],
+      "link": "http://amzn.to/1QCCmoD",
+      "model": "XB240H",
+      "panel": "TN",
+      "refreshRateFilter": "_144",
+      "refreshRate": 144,
+      "resolution": "1920 x 1080",
+      "responseTime": 1,
+      "size": 24
+    },
+    {
+      "adaptiveSyncFilter": "FreeSync",
+      "adaptiveSync": "FreeSync",
+      "brand": "Acer",
+      "inputs": [
+        "DisplayPort",
+        "DVI",
+        "HDMI"
+      ],
+      "link": "http://amzn.to/1RxeUW7",
+      "model": "XG270HU",
+      "panel": "TN",
+      "refreshRateFilter": "_144",
+      "refreshRate": 144,
+      "resolution": "2560 x 1440",
+      "responseTime": 1,
+      "size": 27
+    },
+    {
+      "adaptiveSyncFilter": "G_Sync",
+      "adaptiveSync": "G-Sync",
+      "brand": "Acer",
+      "inputs": [
+        "DisplayPort",
+        "HDMI"
+      ],
+      "link": "http://amzn.to/1QCD98P",
+      "model": "XB271HU",
+      "panel": "IPS",
+      "refreshRateFilter": "_144",
+      "refreshRate": 144,
+      "resolution": "2560 x 1440",
+      "responseTime": 4,
+      "size": 27
+    },
+    {
+      "adaptiveSyncFilter": "FreeSync",
+      "adaptiveSync": "FreeSync",
+      "brand": "Asus",
+      "inputs": [
+        "DisplayPort",
+        "HDMI"
+      ],
+      "link": "http://amzn.to/1QCCS62",
+      "model": "MG279Q",
+      "panel": "IPS",
+      "refreshRateFilter": "_144",
+      "refreshRate": 144,
       "resolution": "2560 x 1440",
       "responseTime": 4,
       "size": 27

@@ -1,0 +1,28 @@
+<div class="container">
+<h1>Graphics Card Recommendations</h1>
+
+<div class="row box-shadow--2dp">
+  <div class="col-md-6" ng-repeat="gpu in vm.gpus">
+    <h3>{{gpu.title}}</h3>
+    <div class="row">
+      <div class="col-md-4">
+        <img ng-src="{{gpu.img}}" alt="" class="img-responsive">
+      </div>
+      <div class="col-md-4">
+        Benchmarks:
+          <ul>
+            <li ng-repeat="review in gpu.benchmarks">
+              <a href="{{review.link}}">{{review.site_name}}</a>
+            </li>
+          </ul>
+      </div>
+      <div class="col-md-4">
+        Comparables:
+          <ul>
+            <li ng-repeat="comp in gpu.comparables">{{comp}}</li>
+          </ul>
+      </div>
+    </div>
+    <p>{{gpu.info}}</p>
+    Purchase <a href={{gpu.link}} target="_blank">here</a>
+  </div>

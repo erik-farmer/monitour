@@ -1,21 +1,62 @@
 <div class="container">
-  <h1>{{vm.site}}:</h1>
-  <div class="checkbox">
-    <label>
-      <input type="checkbox" ng-model="vm.brands.Dell"> Dell
-    </label>
-    <label>
-      <input type="checkbox" ng-model="vm.brands.Asus"> Asus
-    </label>
-    <label>
-      <input type="checkbox" ng-model="vm.brands.Acer"> Acer
-    </label>
+
+  <div class="row filter_row box-shadow--2dp">
+    <!-- Filter Section -->
+    <div class="col-md-4">
+      <div class="filter-name-wrapper">
+        <h3>Panel</h3> <a href="#" data-tooltip="IPS panels offer better colors &amp; viewing angles but are more expensive and have higher response times than a TN.">?</a>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" ng-model="vm.filter.panel.IPS"> IPS
+        </label>
+        <label>
+          <input type="checkbox" ng-model="vm.filter.panel.TN"> TN
+        </label>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="filter-name-wrapper">
+        <h3>Refresh Rate</h3> <a href="#" data-tooltip="How many frames a monitor can display every second. Having a refresh rate lower than your FPS can cause screen tearing.">?</a>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" ng-model="vm.filter.refreshRateFilter._144"> 144
+        </label>
+        <label>
+          <input type="checkbox" ng-model="vm.filter.refreshRateFilter._60"> 60
+        </label>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="filter-name-wrapper">
+        <h3>Adaptive Sync</h3> <a href="#" data-tooltip="Adaptive sync allows the monitor to set the refresh rate to your current FPS.">?</a>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" ng-model="vm.filter.adaptiveSyncFilter.G_Sync"> G-Sync
+        </label>
+        <label>
+          <input type="checkbox" ng-model="vm.filter.adaptiveSyncFilter.FreeSync"> FreeSync
+        </label>
+      </div>
+    </div>
   </div>
-  <div ng-repeat="m in vm.monitors | filter:vm.brandFilter">
-    {{m.brand}}: {{m.model}} <br>
-    {{m.size}}inch {{m.panel}} panel<br>
-    {{m.resolution}}@{{m.resfreshRate}}Hz
-    <hr>
+  <!-- End Filter Section -->
+
+  <!-- Monitor Boxes -->
+  <div class="row box-shadow--2dp">
+      <div class="col-md-4" ng-repeat="m in vm.monitors | filter:vm.filterByProperties">
+        {{m.brand}}: {{m.model}} <br>
+        {{m.size}} inch {{m.panel}} panel <br>
+        {{m.resolution}} pixels @{{m.refreshRate}}Hz <br>
+        {{m.responseTime}}ms response time <br>
+        Adaptive Sync: {{m.adaptiveSync}} <br>
+        <a href="{{m.link}}" target="_blank">Buy on Amazon</a>
+        <hr>
+      </div>
+      <div class="clearfix" ng-if="$index%3==2"></div>
   </div>
-  <pre>{{vm.brands|json}}</pre>
+  <!-- End Monitor Boxes -->
+
 </div>

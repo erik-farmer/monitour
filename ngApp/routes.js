@@ -8,7 +8,7 @@
 
     function configFunction($locationProvider, $stateProvider, $urlRouterProvider) {
 
-        $locationProvider.html5Mode(true);
+        // $locationProvider.html5Mode(true);
 
         $urlRouterProvider.otherwise('/');
 
@@ -16,6 +16,10 @@
             .state('home', {
                 url: '/',
                 template: '<list-view></list-view>',
+            })
+            .state('gpus', {
+                url: '/gpus',
+                template: '<gpu-info></gpu-info>',
             });
     }
 
