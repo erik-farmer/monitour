@@ -23,11 +23,16 @@
 
         }
 
-        ControllerFunction.$inject = [];
+        ControllerFunction.$inject = ["gpuService"];
 
-        function ControllerFunction() {
+        function ControllerFunction(gpuService) {
 
             var vm = this;
+            gpuService.getGpus().then(function(data) {
+                if (data.status == 200) {
+                    vm.gpus = data.data.gpus;
+                }
+            });
 
         }
 

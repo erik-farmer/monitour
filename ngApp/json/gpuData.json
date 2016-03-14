@@ -1,25 +1,50 @@
 {
-  "gpus": {
-    "pick1080-60" :{
-      "card": "XYZ",
-      "benchmarks": [],
-      "comparables": [],
-      "img": "",
-      "link": ""
+  "gpus": [
+    {
+      "title": "1080p 60+ FPS: Nvidia GTX 970",
+      "benchmarks": [
+        {
+          "site_name": "bit-tech",
+          "link": "http://www.bit-tech.net/hardware/graphics/2014/09/19/nvidia-geforce-gtx-970-review/6"
+        },
+        {
+          "site_name": "Gamers Nexus",
+          "link": "http://www.gamersnexus.net/game-bench/2130-star-wars-battlefront-pc-fps-benchmark-graphics-cards"
+        },
+        {
+          "site_name": "Anandtech",
+          "link": "http://www.anandtech.com/show/8568/the-geforce-gtx-970-review-feat-evga/7"
+        },
+        {
+          "site_name": "Tom's hardware",
+          "link": "http://www.tomshardware.com/reviews/nvidia-geforce-gtx-980-970-maxwell,3941-8.html"
+        }
+      ],
+      "comparables": ["Nvidia 780ti", "AMD r9 290X", "AMD r9 390X"],
+      "img": "/static/img/NVIDIA-GeForce-GTX-970-front.png",
+      "link": "http://amzn.to/1UaH9jh",
+      "info": "The GTX 970 and it's comparables will easily take your 1080p gaming to 60-90 frames with ease while still being a good value for budget conscious builders."
     },
-    "pick1080-80" :{
-      "card": "XYZ",
-      "benchmarks": [],
-      "comparables": [],
-      "img": "",
-      "link": ""
-    },
-    "pick1440-60" :{
-      "card": "XYZ",
-      "benchmarks": [],
-      "comparables": [],
-      "img": "",
-      "link": ""
+    {
+      "title": "1440p 60+ FPS: Nvidia GTX 980ti",
+      "benchmarks": [
+        {
+          "site_name": "Anandtech",
+          "link": "http://www.anandtech.com/show/9306/the-nvidia-geforce-gtx-980-ti-review/4"
+        },
+        {
+          "site_name": "Hardware Canucks",
+          "link": "http://www.hardwarecanucks.com/forum/hardware-canucks-reviews/69502-nvidia-gtx-980ti-performance-review-6.html"
+        },
+        {
+          "site_name": "Gamers Nexus",
+          "link": "http://www.gamersnexus.net/hwreviews/1964-nvidia-gtx-980-ti-benchmark-vs-780ti-980-titanx-290x/Page-2"
+        }
+      ],
+      "comparables":["AMD r9 Fury X"],
+      "img": "/static/img/geforce-gtx-980-ti-front.png",
+      "link": "http://amzn.to/1RIHiEW",
+      "info": "Gaming at 1440p at 60+ is rough for single card setups but is certainly doable if you pick a top tier card. With the upcomming release of Pascal based cards from Nvidia we may see better options at this tier soon."
     }
-  }
+  ]
 }
