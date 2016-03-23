@@ -22,7 +22,7 @@
       ],
       "comparables": ["Nvidia 780ti", "AMD r9 290X", "AMD r9 390X"],
       "img": "/static/img/NVIDIA-GeForce-GTX-970-front.png",
-      "link": "http://amzn.to/1UaH9jh",
+      "link": "http://amzn.to/1UjJB7O",
       "info": "The GTX 970 and it's comparables will easily take your 1080p gaming to 60-90 frames with ease while still being a good value for budget conscious builders."
     },
     {
@@ -43,7 +43,7 @@
       ],
       "comparables":["AMD r9 Fury X"],
       "img": "/static/img/geforce-gtx-980-ti-front.png",
-      "link": "http://amzn.to/1RIHiEW",
+      "link": "http://amzn.to/1ZqPlMk",
       "info": "Gaming at 1440p at 60+ is rough for single card setups but is certainly doable if you pick a top tier card. With the upcomming release of Pascal based cards from Nvidia we may see better options at this tier soon."
     }
   ]
